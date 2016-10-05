@@ -26,7 +26,7 @@ test:
   database: creadit4u_test
   host: localhost
   username: root
-  password:
+  password: 
 
 production:
   <<: *default
