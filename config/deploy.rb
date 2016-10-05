@@ -3,7 +3,7 @@
 
 set :application, 'creadit4u'
 
-set :repo_url, 'git@github.com:MattChen1102/Creadit4u.git'
+set :repo_url, 'https://github.com/MattChen1102/Creadit4u.git'
 set :deploy_to, '/home/deploy/creadit4u'
 set :keep_releases, 5
 
