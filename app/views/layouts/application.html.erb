@@ -9,24 +9,11 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="logoword pull-left">Creadit4U</div>
-        <ul class="nav nav-pills pull-right">  
-          <% if current_user %>
-            <li role="presentation"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">Profile</a></li>
-            <li role="presentation"><a href="#">Shopping car</a></li>  
-            <li role="presentation"><%= link_to('登出', destroy_user_session_path, :method => :delete) %></li>
-            <li role="presentation"><%= link_to('修改密碼', edit_registration_path(:user)) %></li>
-          <% else %>
-            <li role="presentation"><%= link_to('註冊', new_registration_path(:user)) %></li>
-            <li role="presentation"><%= link_to('登入', new_session_path(:user)) %></li>
-          <% end %>
-        </ul>
-     </div>   
-
-    <%= yield %>
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
+    <div class="container-fluid">
+      <%= render "common/navbar" %>
+      <%= notice_message  %>
+      <%= yield %>
+    </div>
+      <%= render "common/footer" %>  
   </body>
 </html>

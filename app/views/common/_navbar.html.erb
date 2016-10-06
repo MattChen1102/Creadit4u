@@ -1,0 +1,31 @@
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Creadit4U</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <% if current_user %>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            Hi, <%= current_user.first_name %>  
+            <b class="caret"></b>
+            </a>
+          <ul class="dropdown-menu">
+            <li><%= link_to("帳號設定", edit_user_registration_path )%></li>
+            <li> <%= link_to("登出", destroy_user_session_path, 
+                               :method => :delete ) %></li>
+          </ul>      
+          <li role="presentation"><a href="#">交易清單</a></li>
+          <li role="presentation"><a href="#">購物車</a></li>  
+        <% else %>
+          <li role="presentation"><%= link_to('註冊', new_registration_path(:user)) %></li>
+          <li role="presentation"><%= link_to('登入', new_session_path(:user)) %></li>
+        <% end %>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
