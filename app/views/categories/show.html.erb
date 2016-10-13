@@ -1,0 +1,16 @@
+<h1 align="center"><%= @category.name %></h1>
+
+<div class="row">
+  <% @products.each do |product| %>
+    <div class='col-sm-6'>
+      <div class='media'>
+        <%= image_tag 'test.jpeg', class: 'pull-left' %>
+        <div class='media-body'>
+          <h2 class='product-name'><%= link_to product.name, category_product_path(product.category, product) %></h2>
+          <div class='product-description'><%= product.description %></div>
+          <div class='product-price'><%= number_to_currency product.price %></div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

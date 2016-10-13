@@ -1,1 +1,61 @@
-<h1 align="center">...text...</h1>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <%= image_tag 'test.jpeg'%>
+      <div class="carousel-caption">
+		    <h3>Let's Teavel</h3>
+		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet perferendis reprehenderit, et cum deserunt facilis, dolorem consectetur quidem rem beatae saepe quisquam aliquid optio recusandae rerum porro ducimus commodi! Odit.</p>
+		  </div>
+    </div>
+    <div class="item">
+		  <%= image_tag 'test.jpeg'%>
+		  <div class="carousel-caption">
+		    <h3>Let's Accommodation</h3>
+		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet perferendis reprehenderit, et cum deserunt facilis, dolorem consectetur quidem rem beatae saepe quisquam aliquid optio recusandae rerum porro ducimus commodi! Odit.</p>
+		  </div>
+		</div>
+
+		<div class="item">
+		  <%= image_tag 'test.jpeg'%>
+		  <div class="carousel-caption">
+		    <h3>Go Restaurant</h3>
+		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet perferendis reprehenderit, et cum deserunt facilis, dolorem consectetur quidem rem beatae saepe quisquam aliquid optio recusandae rerum porro ducimus commodi! Odit.</p>
+		  </div>
+		</div>
+
+		<div class="item">
+		  <%= image_tag 'test.jpeg'%>
+		  <div class="carousel-caption">
+		    <h3>Leisure time</h3>
+		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet perferendis reprehenderit, et cum deserunt facilis, dolorem consectetur quidem rem beatae saepe quisquam aliquid optio recusandae rerum porro ducimus commodi! Odit.</p>
+		  </div>
+		</div>  
+  </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class='row'>
+  <div class='col-sm-3'>
+    <ul class='nav nav-stacked'>
+      <% @categories.each do |category| %>
+        <li><%= link_to category.name, category_path(category) %></li>
+      <% end %>
+    </ul>
+  </div>
+</div> 
