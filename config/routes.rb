@@ -5,7 +5,9 @@ Rails.application.routes.draw do
 
   resources :categories, only: :show do
     resources :products, controller: 'category_products', only: :show
- end
+  end
+
+  get '/order_list' => 'creadit4u#order_list'
 
   scope :path => '/api/v1/', :module => "api_v1", :as => 'v1', :defaults => { :format => :json } do 
 	

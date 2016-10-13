@@ -18,7 +18,7 @@
             <li class="text-center"><%= link_to("帳號設定", edit_user_registration_path )%></li>
             <li class="text-center"><%= link_to("登出", destroy_user_session_path, :method => :delete ) %></li>
           </ul>      
-          <li role="presentation"><a href="#">交易清單 <span class="glyphicon glyphicon-pushpin"></a></li>
+          <li role="presentation"><%= link_to "List", order_list_path %></li>
           <li role="presentation"><a href="#">購物車 <span class="glyphicon glyphicon-shopping-cart"></a></li>  
         <% else %>
           <li role="presentation"><%= link_to('註冊', new_registration_path(:user)) %></li>
