@@ -15,7 +15,7 @@ class ApiV1::AuthController < ApiController
                         :user_id => user.id,
                         :first_name => user.first_name,
                         :last_name => user.last_name,
-                        :phone_number => user.phone_number
+                        :phone_number => user.phone_number,
                         :photo => "https://firebasestorage.googleapis.com/v0/b/ios1-ec05d.appspot.com/o/%E6%98%93%E4%BA%9E%E5%A9%B7.png?alt=media&token=8e7b6244-45e1-41d2-ba15-7b9232f5c2a6"
                       }
      else
