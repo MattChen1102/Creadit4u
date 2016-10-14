@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161014050235) do
+ActiveRecord::Schema.define(version: 20161014121642) do
 
   create_table "categories", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name"
@@ -31,6 +31,8 @@ ActiveRecord::Schema.define(version: 20161014050235) do
     t.boolean  "active"
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
+    t.date     "shelved_on"
+    t.index ["category_id", "active", "shelved_on"], name: "index_products_on_category_id_and_active_and_shelved_on", using: :btree
     t.index ["category_id", "active"], name: "index_products_on_category_id_and_active", using: :btree
     t.index ["category_id"], name: "index_products_on_category_id", using: :btree
   end
