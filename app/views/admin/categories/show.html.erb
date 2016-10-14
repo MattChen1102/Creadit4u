@@ -1,5 +1,8 @@
 <h1 align="center">瀏覽 Category</h1>
-  <%= link_to "Back to Categories", admin_categories_path, class: 'btn btn-default' %>
-  <%= link_to "Edit", edit_admin_category_path(@category), class: 'btn btn-success' %>
-<h2 align="center"><%= @category.name %></h2>
-<p align="center"><%= @category.description %></p> 
+<hr>
+	<h2 align="center"><%= @category.name %></h2>
+	<p align="center"><%= @category.description %></p> 
+<br>
+  <h6 align="center"><%= link_to "Back to Categories", admin_categories_path, class: 'btn btn-default' %></h6>
+<br>
+  <h6 align="center"><%= link_to "Edit", edit_admin_category_path(@category), class: 'btn btn-success' %></h6>
