@@ -7,6 +7,8 @@ Rails.application.routes.draw do
     resources :products, controller: 'category_products', only: :show
   end
 
+  resource :cart
+
   get '/order_list' => 'creadit4u#order_list'
 
   namespace :admin do
