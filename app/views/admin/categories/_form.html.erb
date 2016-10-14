@@ -1,0 +1,17 @@
+<%= simple_form_for([:admin, @category]) do |f| %>
+  <div class="form-group">
+    <%= f.input :name , label: '分類名稱',%>
+  </div>
+  <div class="form-group">
+    <%= f.input :description , label: '商品敘述',%>
+  </div>
+
+  <div class="form-group">
+    <%= f.input :enabled , label: 'enabled',%>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit ,class: 'btn btn-primary' %>
+  </div>
+<% end %>
+  
