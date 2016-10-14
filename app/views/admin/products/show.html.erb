@@ -1,0 +1,9 @@
+<h1 align="center">瀏覽 Product</h1>
+<hr>
+	<h2 align="center"><%= @product.name %></h2>
+	<p align="center"><%= @product.description %></p>
+	<p align="center">Price: <%= number_to_currency @product.price %></p>
+<br>
+	<h6 align="center"><%= link_to "Edit", edit_admin_product_path(@product), class: 'btn btn-success' %></h6>
+<br>
+	<h6 align="center"><%= link_to "Back to Products", admin_products_path, class: 'btn btn-default' %></h6>
