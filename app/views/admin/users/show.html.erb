@@ -1,0 +1,31 @@
+<h1 align="center">瀏覽 User</h1>
+<hr>
+
+<table class='table'>
+  <thead>
+    <tr>
+      <th>編號</th>
+      <th>管理者</th>
+      <th>信箱</th>
+      <th>姓</th>
+      <th>名</th>
+      <th>電話號碼</th>
+      <th>最近登入</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><%= @user.id %></td>
+        <td><%= @user.admin? %></td>
+        <td><%= @user.email %></td>
+        <td><%= @user.last_name %></td>
+        <td><%= @user.first_name %></td>
+        <td><%= @user.phone_number %></td>
+        <td><%= @user.current_sign_in_at %></td>
+      </tr>
+  </tbody>
+</table>
+
+<h6 align="center"><%= link_to "Edit", edit_admin_user_path(@user), class: 'btn btn-success' %></h6>
+<br>
+	<h6 align="center"><%= link_to "Back to Users", admin_users_path, class: 'btn btn-default' %></h6>
