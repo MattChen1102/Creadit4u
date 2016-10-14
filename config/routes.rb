@@ -9,6 +9,13 @@ Rails.application.routes.draw do
 
   get '/order_list' => 'creadit4u#order_list'
 
+  namespace :admin do
+    root 'index#index'
+    resources :categories
+    resources :users
+    resources :products
+  end
+
   scope :path => '/api/v1/', :module => "api_v1", :as => 'v1', :defaults => { :format => :json } do 
 	
   post "/login" => "auth#login"
