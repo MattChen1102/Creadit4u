@@ -8,7 +8,8 @@
         <div class='media-body'>
           <h2 class='product-name'><%= link_to product.name, category_product_path(product.category, product) %></h2>
           <div class='product-description'><%= product.description %></div>
-          <div class='product-price'><%= number_to_currency product.price %></div>
+          <div class='product-price'><%= number_to_currency product.price %>
+          </div>
         </div>
       </div>
     </div>
