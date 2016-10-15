@@ -6,6 +6,8 @@ class User < ApplicationRecord
   
   has_one :cart
 
+  has_many :orders, dependent: :destroy
+
   before_create :generate_authentication_token
   
   def generate_authentication_token
