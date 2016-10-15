@@ -27,6 +27,7 @@
     <% end %>
   </tbody>
 </table>
-<h6 align="center"><%= link_to "Back to Orders", admin_orders_path, class: 'btn btn-default' %></h6>
 <br>
-<h6 align="center"><%= link_to "Edit", edit_admin_order_path(@order), class: 'btn btn-success' %></h6>
+<h6 align="center"><%= link_to "Edit", edit_admin_order_path(@order), class: 'btn btn-success', data: { no_turbolink: true } %></h6>
+<br>
+<h6 align="center"><%= link_to "Back to Orders", admin_orders_path, class: 'btn btn-default' %></h6>
