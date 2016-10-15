@@ -18,6 +18,7 @@ Rails.application.routes.draw do
     resources :categories
     resources :users
     resources :products
+    resources :orders, except: [:new, :create]
   end
 
   scope :path => '/api/v1/', :module => "api_v1", :as => 'v1', :defaults => { :format => :json } do 
