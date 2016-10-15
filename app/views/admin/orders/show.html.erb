@@ -1,5 +1,9 @@
 <h1 align="center">瀏覽訂單 <%= @order.id %></h1>
 <hr>
+<br>
+<h6 align="center"><%= link_to "Edit", edit_admin_order_path(@order), class: 'btn btn-success', data: { no_turbolink: true } %></h6>
+<br>
+<h6 align="center"><%= link_to "Back to Orders", admin_orders_path, class: 'btn btn-default' %></h6>
 <ul>
   <li>姓名：<%= @order.name %></li>
   <li>信箱<%= @order.email %></li>
@@ -27,7 +31,26 @@
     <% end %>
   </tbody>
 </table>
-<br>
-<h6 align="center"><%= link_to "Edit", edit_admin_order_path(@order), class: 'btn btn-success', data: { no_turbolink: true } %></h6>
-<br>
-<h6 align="center"><%= link_to "Back to Orders", admin_orders_path, class: 'btn btn-default' %></h6>
+
+<h2>訂單資料修改紀錄</h2>
+<% @order.change_records.each do |record| %>
+  <p>時間：<%= record.created_at %></p>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>欄位</th>
+        <th>原始值</th>
+        <th>修改為</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% record.values.each do |field, values| %>
+        <tr>
+          <td><%= field %></td>
+          <td><%= values[0] %></td>
+          <td><%= values[1] %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>
