@@ -1,0 +1,11 @@
+<h2>發表評論</h2>
+<%= simple_form_for(Comment.new, url: url) do |f| %>
+  <div class="form-group">
+    <%= f.input :name %>
+  </div>
+  <div class="form-group">
+    <%= f.input :content %>
+  </div>
+
+   <%= f.button :submit ,class: 'btn btn-default' %>
+<% end %>
