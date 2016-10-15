@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   end
 
   resource :cart
+  resources :orders, only: [:index, :new, :create, :show]
 
   get '/order_list' => 'creadit4u#order_list'
 
