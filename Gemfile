@@ -23,6 +23,7 @@ gem 'capistrano-passenger', :group => :development
 gem 'simple_form'
 gem 'kaminari', github: "amatsuda/kaminari"
 gem 'kaminari-bootstrap', '~> 3.0.1'
+gem 'acts_as_list'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
