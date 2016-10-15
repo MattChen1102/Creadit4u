@@ -12,9 +12,12 @@ Rails.application.routes.draw do
   end
 
   resource :cart
-  resources :orders, only: [:index, :new, :create, :show]
-
-  get '/order_list' => 'creadit4u#order_list'
+  resources :orders, only: [:index, :new, :create, :show] do
+    post :checkout, on: :member
+  end
+ 
+  post 'pay2go/return' => 'pay2go#callback'
+  post 'pay2go/notify' => 'pay2go#notify'
 
   namespace :admin do
     root 'index#index'
