@@ -7,5 +7,5 @@ class Product < ApplicationRecord
 
   validates_presence_of :name, :price
 
-	scope :active, ->{ where(active: true).where('shelved_on <= ?', Date.current) }
+	scope :active, ->{ where(active: true) }
 end

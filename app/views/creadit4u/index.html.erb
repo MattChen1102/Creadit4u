@@ -9,14 +9,14 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <%= image_tag 'test.jpeg'%>
+      <%= image_tag 'test.png'%>
       <div class="carousel-caption">
 		    <h3>Let's Teavel</h3>
 		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet perferendis reprehenderit, et cum deserunt facilis, dolorem consectetur quidem rem beatae saepe quisquam aliquid optio recusandae rerum porro ducimus commodi! Odit.</p>
 		  </div>
     </div>
     <div class="item">
-		  <%= image_tag 'test.jpeg'%>
+		  <%= image_tag 'test.png'%>
 		  <div class="carousel-caption">
 		    <h3>Let's Accommodation</h3>
 		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet perferendis reprehenderit, et cum deserunt facilis, dolorem consectetur quidem rem beatae saepe quisquam aliquid optio recusandae rerum porro ducimus commodi! Odit.</p>
@@ -24,7 +24,7 @@
 		</div>
 
 		<div class="item">
-		  <%= image_tag 'test.jpeg'%>
+		  <%= image_tag 'test.png'%>
 		  <div class="carousel-caption">
 		    <h3>Go Restaurant</h3>
 		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet perferendis reprehenderit, et cum deserunt facilis, dolorem consectetur quidem rem beatae saepe quisquam aliquid optio recusandae rerum porro ducimus commodi! Odit.</p>
@@ -32,7 +32,7 @@
 		</div>
 
 		<div class="item">
-		  <%= image_tag 'test.jpeg'%>
+		  <%= image_tag 'test.png'%>
 		  <div class="carousel-caption">
 		    <h3>Leisure time</h3>
 		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet perferendis reprehenderit, et cum deserunt facilis, dolorem consectetur quidem rem beatae saepe quisquam aliquid optio recusandae rerum porro ducimus commodi! Odit.</p>
@@ -51,26 +51,28 @@
 </div>
 
 <div class='row'>
-  <div class='col-sm-3'>
+  <div class='col-sm-2'>
     <ul class='nav nav-stacked'>
       <% @categories.each do |category| %>
-        <li>
-          <%= link_to_if (category.products_count > 0), category.name, category_path(category) %>
-            <ul>
-              <% category.children.each do |child| %>
-                <li><%= link_to child.name, category_path(child) %></li>
-              <% end %>
-            </ul>
-        </li>
+        <li><%= link_to category.name, category_path(category) %></li>
       <% end %>
     </ul>
   </div>
-</div>
 
-<div class='col-sm-10'>
+  <!-- <div class='col-sm-10'>
     <div class="row">
-      <%= render partial: 'shared/products/product', collection: @products %>
-    </div>
+      <% @products.each do |product| %>
+        <div class='col-sm-3'>
+          <div class='media'>
+            <%= image_tag 'test.jpeg', class: 'pull-left' %>
+            <div class='media-body'>
+              <h2 class='product-name'><%= link_to product.name, category_product_path(product.category, product) %></h2>
+              <div class='product-description'><%= product.description %></div>
+              <div class='product-price'><%= number_to_currency product.price %></div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div> -->
     <%= paginate @products %>
-  </div>
-</div> 
+</div>

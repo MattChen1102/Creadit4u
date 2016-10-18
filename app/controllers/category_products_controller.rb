@@ -1,4 +1,4 @@
-class CategoryProductController < ApplicationController
+class CategoryProductsController < ApplicationController
 	before_action :find_category
  
    def show
@@ -10,7 +10,7 @@ class CategoryProductController < ApplicationController
       @cart = find_cart
       @cart.add_item(@product)
       session[:cart_id] = @cart.id
-      redirect_to :back, notice: '購物車已更新'
+      redirect_to :back, notice: '已將商品添加至購物車'
    end
  
    private
@@ -22,10 +22,14 @@ class CategoryProductController < ApplicationController
    end
 
    def find_cart
-      if session[:cart_id]
-        Cart.find_by(id: session[:cart_id]) || Cart.new
+      if user_signed_in?
+        current_user.cart || current_user.create_cart
+      elsif session[:cart_id]
+        cart = Cart.find(session[:cart_id])
       else
-        Cart.new
+        cart = Cart.create
+        session[:cart_id] = cart.id
+        cart
       end
    end
 end

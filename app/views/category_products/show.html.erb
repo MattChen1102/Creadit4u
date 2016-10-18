@@ -4,16 +4,20 @@
   </div>
   <div class="col-sm-6">
     <h1><%= @product.name %></h1>
-    <p>Category: <%= link_to @product.category.name, category_path(@product.category) %></p>
+    <p>Category: <%= link_to @product.category.name, category_path(@product.category) %></p><br>
     <div class='product-description'><%= @product.description %></div>
-    <div class='product-price'><%= number_to_currency @product.price %></div>
+    <br>
     <div class="product-content"><%= simple_format(@product.content) %></div>
+    <br>
+    <div class='product-price'><%= number_to_currency @product.price %></div>
+    <br>
     <div>
       <%= link_to '加到購物車', add_category_product_path(@product.category, @product), method: :post, class: 'btn btn-primary' %>
     </div>
+    <br>
   </div>
 </div>
-
+<br>
 <div class="row">
   <div class="col-sm-6">
     <%= render 'shared/comments/form', url: category_product_comments_path(@product.category, @product) if user_signed_in? %>

@@ -1,10 +1,10 @@
 <div class='col-sm-3'>
   <div class='media'>
-    <%= image_tag 'test.jpg', class: 'pull-left' %>
+    <%= image_tag 'test.jpeg', class: 'pull-left' %>
     <div class='media-body'>
       <h2 class='product-name'><%= link_to product.name, category_product_path(product.category, product) %></h2>
-      <div class='product-description'><%= product.description %></div>
-      <div class='product-price'><%= number_to_currency product.price %></div>
+			<h2 class='product-description'><%= product.description %></div>
+			<h2 class='product-price'><%= number_to_currency product.price %></div>
     </div>
   </div>
 </div>

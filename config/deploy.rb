@@ -7,7 +7,7 @@ set :repo_url, 'https://github.com/MattChen1102/Creadit4u.git'
 set :deploy_to, '/home/deploy/creadit4u'
 set :keep_releases, 5
 
-append :linked_files, 'config/database.yml', 'config/secrets.yml'
+append :linked_files, 'config/database.yml', 'config/secrets.yml' , 'config/pay2go.yml'
 
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system'
 

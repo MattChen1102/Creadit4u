@@ -14,7 +14,7 @@
 	      </tr>
 	    </thead>
 	    <tbody>
-       <% @cart_items.each do |cart_item| %>
+       	<% @cart_items.each do |cart_item| %>
 	        <tr>
 	          <td><%= cart_item.item.name %></td>
 	          <td><%= number_to_currency cart_item.item.price %></td>
@@ -29,8 +29,8 @@
 	        <th><%= number_to_currency @cart.total %></th>
 	      </tr>
       </tfoot>
-    </table>
-	<% end %> 		
-<div class="text-center">
-  <%= link_to "我要結帳", new_order_path, class: 'btn btn-success' %>
-</div>
+    </table> 		
+		<div class="text-center">
+		  <%= link_to "我要結帳", new_order_path, class: 'btn btn-success' %>
+		</div>
+	<% end %>
