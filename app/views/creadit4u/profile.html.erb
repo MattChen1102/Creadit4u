@@ -7,7 +7,7 @@
       <th>姓</th>
       <th>名</th>
       <th>手機號碼</th>
-      <th>提供卡片</th>
+      <th>可服務卡片</th>
     </tr>
   </thead>
   <tbody>
@@ -17,6 +17,33 @@
         <td><%= current_user.last_name %></td>
         <td><%= current_user.first_name %></td>
         <td><%= current_user.phone_number %></td>
+        <td>
+          <%= form_tag bulk_delete_creadit4u_path do %>
+            <ul>
+              <% @user_card_category.each do |e| %>
+                <li>
+                    <%= check_box_tag "ids[]", e.id, false %>
+                  <%= e.name %>
+                </li>
+              <% end %>
+            </ul>
+              <h5><%= submit_tag "Delete" , :class => "btn btn-danger" %></h5>
+          <% end %>
+        </td>
       </tr>
   </tbody>
 </table>
+
+<br><br>
+<div class="row">
+  <div class="container">
+    <div class="col-sm-12">
+      <%= simple_form_for current_user, url: user_cards_path, method: :post do |f| %>
+        <h4 align="center"><%= f.collection_check_boxes(:user_card_category_ids, UserCardCategory.all, :id, :name) %></h4><hr><br>
+        <h4 align="center"><%= f.button :submit ,"新增可提供服務的信用卡" ,class: 'btn btn-primary' %></h4>  
+      <% end %>
+    </div>
+  </div>
+</div>
+
+  
