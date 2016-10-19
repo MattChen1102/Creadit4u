@@ -19,14 +19,14 @@
         <td><%= current_user.phone_number %></td>
         <td>
           <%= form_tag bulk_delete_creadit4u_path do %>
-            <ul>
+            <ol>
               <% @user_card_category.each do |e| %>
                 <li>
                     <%= check_box_tag "ids[]", e.id, false %>
                   <%= e.name %>
                 </li>
               <% end %>
-            </ul>
+            </ol>
               <h5><%= submit_tag "Delete" , :class => "btn btn-danger" %></h5>
           <% end %>
         </td>
