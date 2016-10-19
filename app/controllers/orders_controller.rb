@@ -38,9 +38,7 @@ class OrdersController < ApplicationController
   private
 
   def order_params
-    params.require(:order).permit(
-      :name, :email, :mobile, :address
-    )
+    params.require(:order).permit(:name, :email, :mobile)
   end
 
   def current_cart
@@ -56,7 +54,7 @@ class OrdersController < ApplicationController
   end
 
   def check_cart
-    redirect_to :back, notice: "購物車裡面目前沒有東西唷" if current_cart.empty?
+    redirect_to :back, notice: "購物車裡面目前沒有任何商品" if current_cart.empty?
   end
 
   helper_method :current_cart

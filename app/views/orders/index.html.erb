@@ -8,9 +8,7 @@
       <th>信箱</th>
       <th>電話</th>
       <th>金額</th>
-      <th>已付款</th>
-      <th></th>
-      <th></th>
+      <th>付款狀態</th>
       <th></th>
     </tr>
   </thead>
@@ -23,10 +21,9 @@
         <td><%= order.mobile %></td>
         <td><%= number_to_currency order.amount %></td>
         <td><%= order.paid? %></td>
-        <td><%= link_to '瀏覽', order_path(order) %></td>
+        <td><%= link_to '檢視', order_path(order) %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
 <%= paginate @orders %>

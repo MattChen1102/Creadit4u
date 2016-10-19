@@ -2,7 +2,7 @@ class Payment < ApplicationRecord
 	serialize :params, JSON
   belongs_to :order
  
-  PAYMENT_METHODS = %w[Credit WebATM ATM] # CVS BARCODE
+  PAYMENT_METHODS = %w[Credit WebATM] # CVS BARCODE
   BOOTCAMP_NO = 10
  
   validates_presence_of :order_id, :amount
@@ -94,4 +94,3 @@ class Payment < ApplicationRecord
   end
 end
 
-end
