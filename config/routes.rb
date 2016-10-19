@@ -18,6 +18,7 @@ Rails.application.routes.draw do
  
   post 'pay2go/return' => 'pay2go#callback'
   post 'pay2go/notify' => 'pay2go#notify'
+  post '/profile' => 'creadit4u#profile'
 
   namespace :admin do
     root 'index#index'

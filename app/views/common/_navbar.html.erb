@@ -16,6 +16,7 @@
             </a>
           <ul class="dropdown-menu">
             <li class="text-center"><%= link_to("帳號設定", edit_user_registration_path )%></li>
+            <li class="text-center"><%= link_to("個人資料", profile_path , :method => :post) %></li>
             <li class="text-center"><%= link_to("登出", destroy_user_session_path, :method => :delete ) %></li>
           </ul>      
           <li role="presentation"><%= link_to "購物車",cart_path%></li>

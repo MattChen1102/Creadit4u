@@ -3,4 +3,8 @@ class Creadit4uController < ApplicationController
 		@categories = Category.enabled.root.all
     @products = Product.active.includes(:category).order('id desc').page(params[:page])
 	end
+
+	def profile
+	end
+	
 end

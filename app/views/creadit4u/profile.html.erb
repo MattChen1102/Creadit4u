@@ -1,0 +1,22 @@
+<h1 align="center">個人資料</h1>
+<br><br>
+<table class='table'>
+  <thead>
+    <tr>
+      <th>E-mail</th>
+      <th>姓</th>
+      <th>名</th>
+      <th>手機號碼</th>
+      <th>提供卡片</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% current_user%>
+      <tr>
+        <td><%= current_user.email %></td>
+        <td><%= current_user.last_name %></td>
+        <td><%= current_user.first_name %></td>
+        <td><%= current_user.phone_number %></td>
+      </tr>
+  </tbody>
+</table>
