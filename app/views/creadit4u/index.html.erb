@@ -77,17 +77,17 @@
 </div>
 <div class="portfolio-section">
 	<div class="container">
-		<div class="section-title">Our Services<a href="portfolio-3.html">See All</a></div>
+		<div class="section-title">Our Services<a href="#">See All</a></div>
 		<div class="row" id="container">
 			<div class="col-sm-6">
 				<div class="portfolio-item">
-					<a class="popup-link ion-android-expand" href="/" title="Loft Studio"></a>
-					<a href="portfolio-inner.html">
+					<a class="popup-link ion-android-expand" href="#" title="Check It"></a>
+					<a href=<%= "#{category_path(Category.find(1))}"%> >
 						<span class="portfolio-item-inner">
 							<%= image_tag('住宿(1408.939).jpg')%>
 							<span class="portfolio-item-overlay">
 								<span class="portfolio-ov-description">
-									<span class="portfolio-ov-title">精選住宿1</span>
+									<span class="portfolio-ov-title">精選住宿</span>
 									<span class="portfolio-ov-category">國泰世華 / 最高享受45折優惠</span>
 								</span>
 							</span>
@@ -97,13 +97,13 @@
 			</div>
 			<div class="col-sm-6">
 				<div class="portfolio-item">
-					<a class="popup-link ion-android-expand" href="http://placehold.it/1408x939" title="Laconic"></a>
-					<a href="portfolio-inner.html">
+					<a class="popup-link ion-android-expand" href="#" title="Check It"></a>
+					<a href=<%= "#{category_path(Category.find(4))}"%> >
 						<span class="portfolio-item-inner">
 							<%= image_tag '休閒(1408.939).jpg'%>
 							<span class="portfolio-item-overlay">
 								<span class="portfolio-ov-description">
-									<span class="portfolio-ov-title">精選休閒4</span>
+									<span class="portfolio-ov-title">精選休閒</span>
 									<span class="portfolio-ov-category">花旗銀行 / 華納威秀電影票買一送一</span>
 								</span>
 							</span>
@@ -113,13 +113,13 @@
 			</div>
 			<div class="col-sm-6">
 				<div class="portfolio-item">
-					<a class="popup-link ion-android-expand" href="http://placehold.it/1408x939" title="Loft Studio"></a>
-					<a href="portfolio-inner.html">
+					<a class="popup-link ion-android-expand" href="#" title="Check It"></a>
+					<a href=<%= "#{category_path(Category.find(2))}"%> >
 						<span class="portfolio-item-inner">
 							<%= image_tag '購物(1408.939).jpg'%>
 							<span class="portfolio-item-overlay">
 								<span class="portfolio-ov-description">
-									<span class="portfolio-ov-title">購物優惠享更多2</span>
+									<span class="portfolio-ov-title">購物優惠享更多</span>
 									<span class="portfolio-ov-category">中國信託 / 指定百貨買3000送300</span>
 								</span>
 							</span>
@@ -129,13 +129,13 @@
 			</div>
 			<div class="col-sm-6">
 				<div class="portfolio-item">
-					<a class="popup-link ion-android-expand" href="http://placehold.it/1408x939" title="Loft Studio"></a>
-					<a href="portfolio-inner.html">
+					<a class="popup-link ion-android-expand" href="#" title="Loft Studio"></a>
+					<a href=<%= "#{category_path(Category.find(3))}"%> >
 						<span class="portfolio-item-inner">
 							<%= image_tag '餐廳(1408.939).jpg'%>
 							<span class="portfolio-item-overlay">
 								<span class="portfolio-ov-description">
-									<span class="portfolio-ov-title">美食饗宴3</span>
+									<span class="portfolio-ov-title">美食饗宴</span>
 									<span class="portfolio-ov-category">台北富邦 / 豐Food百匯85折</span>
 								</span>
 							</span>
@@ -153,16 +153,18 @@
 <div class="our-clients-section">
 	<div class="container">
 		<div class="section-title">Users that have chosen us<span class="section-subtitle">我們提供</span></div>
+		<br>
 		<div class="clients-carousel">
-			<a href="#"><%= image_tag 'c-1.png'%></a>
-			<a href="#"><%= image_tag 'c-2.png'%></a>
-			<a href="#"><%= image_tag 'c-3.jpeg'%></a>
-			<a href="#"><%= image_tag 'c-4.png'%></a>
-			<a href="#"><%= image_tag 'c-5.png'%></a>
+			<a href="#"><%= image_tag 'c_1.png'%></a>
+			<a href="#"><%= image_tag 'c_2.png'%></a>
+			<a href="#"><%= image_tag 'c_3.png'%></a>
+			<a href="#"><%= image_tag 'c_4.png'%></a>
+			<a href="#"><%= image_tag 'c_5.png'%></a>
+			<a href="#"><%= image_tag 'c_6.png'%></a>
 		</div>
 	</div>
 </div>
-
+<hr>
 <div class="testimonials-section">
 	<div class="container">
 		<div class="section-title-left">Testimonials<span class="section-subtitle">聽聽我們的使用者怎麼說</span></div>

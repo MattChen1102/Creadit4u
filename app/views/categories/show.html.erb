@@ -1,10 +1,129 @@
-
-<h1 align="center"><%= @category.name %></h1>
-
-<div class="row">
-  <%= render partial: 'shared/products/product', collection: @products %>
-</div>
-
+  <div class="breadcrumbs-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="breadcrumbs-sec-title">
+						Services	
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="breadcrumbs-sec-crumbs">
+						<a href="#">Home</a>
+						<span><%= @category.name %></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio-section portfolio-page">
+		<div class="section-title"><%= @category.name %><a href="#">See All</a></div>
+		<ul class="portfolio-filter">
+			<li data-filter="all">All</li>
+			<li data-filter="web design">Travel</li>
+			<li data-filter="branding">Shopping</li>
+			<li data-filter="interior">Restaurant</li>
+			<li data-filter="app development">Leisure</li>
+		</ul>
+		<div class="container">
+			<div class="row" id="container">
+				<div class="col-sm-6 col-md-4 portfolio-item-wrap" data-filter="web design">
+					<div class="portfolio-item">
+						<a class="popup-link ion-android-expand" href="#" title="Check It"></a>
+						<a href=<%= "#{category_product_path(Category.find(1),Product.find(2))}"%> >
+							<span class="portfolio-item-inner">
+								<%= image_tag ('1.長榮桂冠酒店(台中).png')%>
+								<span class="portfolio-item-overlay">
+									<span class="portfolio-ov-description">
+										<span class="portfolio-ov-title">精選飯店</span>
+										<span class="portfolio-ov-category">國泰世華 / 最高享45% off</span>
+									</span>
+								</span>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 portfolio-item-wrap" data-filter="branding">
+					<div class="portfolio-item">
+						<a class="popup-link ion-android-expand" href="http://placehold.it/1408x939" title="Laconic"></a>
+						<a href=<%= "#{category_product_path(Category.find(1),Product.find(6))}"%> >
+							<span class="portfolio-item-inner">
+								<%= image_tag ('1.長榮桂冠酒店(台中).png')%>
+								<span class="portfolio-item-overlay">
+									<span class="portfolio-ov-description">
+										<span class="portfolio-ov-title">精選飯店</span>
+										<span class="portfolio-ov-category">玉山銀行 / 最高享50％ off </span>
+									</span>
+								</span>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 portfolio-item-wrap" data-filter="interior">
+					<div class="portfolio-item">
+						<a class="popup-link ion-android-expand" href="http://placehold.it/1408x939" title="Loft Studio"></a>
+						<a href=<%= "#{category_product_path(Category.find(1),Product.find(7))}"%> >
+							<span class="portfolio-item-inner">
+								<%= image_tag ('1.長榮桂冠酒店(台中).png')%>
+								<span class="portfolio-item-overlay">
+									<span class="portfolio-ov-description">
+										<span class="portfolio-ov-title">精選飯店</span>
+										<span class="portfolio-ov-category">兆豐銀行 / 最高享30％ off</span>
+									</span>
+								</span>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 portfolio-item-wrap" data-filter="app development">
+					<div class="portfolio-item">
+						<a class="popup-link ion-android-expand" href="http://placehold.it/1408x939" title="Loft Studio"></a>
+						<a href=<%= "#{category_product_path(Category.find(1),Product.find(8))}"%> >
+							<span class="portfolio-item-inner">
+								<%= image_tag ('1.長榮桂冠酒店(台中).png')%>
+								<span class="portfolio-item-overlay">
+									<span class="portfolio-ov-description">
+										<span class="portfolio-ov-title">精選飯店</span>
+										<span class="portfolio-ov-category">玉山銀行 / 最高享60％ off </span>
+									</span>
+								</span>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 portfolio-item-wrap" data-filter="branding">
+					<div class="portfolio-item">
+						<a class="popup-link ion-android-expand" href="http://placehold.it/1408x939" title="Loft Studio"></a>
+						<a href=<%= "#{category_product_path(Category.find(1),Product.find(9))}"%> >
+							<span class="portfolio-item-inner">
+								<%= image_tag ('1.長榮桂冠酒店(台中).png')%>
+								<span class="portfolio-item-overlay">
+									<span class="portfolio-ov-description">
+										<span class="portfolio-ov-title">精選飯店</span>
+										<span class="portfolio-ov-category">澳盛銀行 / 最高享30％ off </span>
+									</span>
+								</span>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 portfolio-item-wrap" data-filter="interior">
+					<div class="portfolio-item">
+						<a class="popup-link ion-android-expand" href="http://placehold.it/1408x939" title="Loft Studio"></a>
+						<a href=<%= "#{category_product_path(Category.find(1),Product.find(2))}"%> >
+							<span class="portfolio-item-inner">
+								<%= image_tag ('1.長榮桂冠酒店(台中).png')%>
+								<span class="portfolio-item-overlay">
+									<span class="portfolio-ov-description">
+										<span class="portfolio-ov-title">精選飯店</span>
+										<span class="portfolio-ov-category">design / interior</span>
+									</span>
+								</span>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
 <footer>
 	<div class="container">
 		<div class="row">
@@ -70,18 +189,3 @@
 		</div>
 	</div>
 </footer>
-<!-- <h1 align="center"><%= @category.name %></h1>
-
-<div class="row">
-  <%= render partial: 'shared/products/product', collection: @products %>
-</div>
-
-<!-- <div class="row">
-  <div class="col-sm-6">
-    <%= render 'shared/comments/form', url: category_comments_path(@category) if user_signed_in? %>
-  </div>
-  <div class="col-sm-6">
-    <%= render 'shared/comments/list', comments: @comments %>
-  </div>
-</div> -->
- -->
