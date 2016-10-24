@@ -10,7 +10,7 @@ class CategoryProductsController < ApplicationController
       @cart = find_cart
       @cart.add_item(@product)
       session[:cart_id] = @cart.id
-      redirect_to :back, notice: '已將商品添加至購物車'
+      redirect_to :back, notice: '已將預約商品添加至預約單'
    end
  
    private
