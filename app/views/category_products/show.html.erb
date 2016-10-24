@@ -12,7 +12,7 @@
     <div class='product-price'><%= number_to_currency @product.price %></div>
     <br>
     <div>
-      <%= link_to '加到購物車', add_category_product_path(@product.category, @product), method: :post, class: 'btn btn-primary' %>
+      <%= link_to '加入預約單', add_category_product_path(@product.category, @product), method: :post, class: 'btn btn-primary' %>
     </div>
     <br>
   </div>

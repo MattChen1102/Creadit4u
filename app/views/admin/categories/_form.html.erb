@@ -5,19 +5,15 @@
   <div class="form-group">
     <%= f.input :description , label: '商品敘述'%>
   </div>
-<% end %>
 
-<%=form_for([:admin, @category]) do |f| %>
   <div class="form-group">
-    <%= f.label :enabled %>
-    <%= f.check_box :enabled %>
+    <%= f.input :enabled %>
   </div>
-<% end %> 
 
-<%= simple_form_for([:admin, @category]) do |f| %>
   <div class="form-actions">
     <%= f.button :submit ,class: 'btn btn-primary' %>
   </div>
+  
 <% end %>
 <hr>
 <br>

@@ -25,6 +25,9 @@ gem 'kaminari', github: "amatsuda/kaminari"
 gem 'kaminari-bootstrap', '~> 3.0.1'
 gem 'acts_as_list'
 gem 'nested_form_fields'
+gem "font-ionicons-rails"
+gem 'owlcarousel2-rails', '~> 2.1'
+gem 'magnific-popup-rails', '~> 1.1'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks

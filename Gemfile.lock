@@ -99,6 +99,8 @@ GEM
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.14)
+    font-ionicons-rails (2.0.1.5)
+      railties (>= 3.2, < 6.0)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
@@ -117,6 +119,7 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.7)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
+    magnific-popup-rails (1.1.0)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
     method_source (0.8.2)
@@ -139,6 +142,7 @@ GEM
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
     orm_adapter (0.5.0)
+    owlcarousel2-rails (2.1.0)
     pkg-config (1.1.7)
     puma (3.6.0)
     rack (2.0.1)
@@ -230,13 +234,16 @@ DEPENDENCIES
   capistrano-rails
   coffee-rails (~> 4.2)
   devise
+  font-ionicons-rails
   jbuilder (~> 2.5)
   jquery-rails
   kaminari!
   kaminari-bootstrap (~> 3.0.1)
   listen (~> 3.0.5)
+  magnific-popup-rails (~> 1.1)
   mysql2
   nested_form_fields
+  owlcarousel2-rails (~> 2.1)
   puma (~> 3.0)
   rails (~> 5.0.0, >= 5.0.0.1)
   sass-rails (~> 5.0)

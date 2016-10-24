@@ -4,14 +4,6 @@
   </div>
 
   <div class="form-group">
-    <%= f.input :password , label: '密碼'%>
-  </div>
-
-  <div class="form-group">
-    <%= f.input :password_confirmation , label: '密碼確認'%>
-  </div>
-
-  <div class="form-group">
     <%= f.input :last_name, label: '姓'%>
   </div>
 
@@ -19,22 +11,15 @@
     <%= f.input :first_name , label: '名'%>
   </div>
 
-
   <div class="form-group">
     <%= f.input :phone_number, label: '聯絡電話'%>
   </div>
-
-  <% end %>
-
-  <%= form_for([:admin, @user]) do |f| %>
 
   <div class="form-group">
      <%= f.label :admin , "是否設定為管理者" %>
      <%= f.check_box :admin %>
   </div>
-  <% end %>
 
-  <%= simple_form_for([:admin, @user]) do |f| %>
   <div class="form-actions">
     <%= f.button :submit ,class: 'btn btn-primary' %>
   </div>

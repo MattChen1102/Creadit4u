@@ -16,11 +16,19 @@ class Admin::OrdersController < Admin::BaseController
     @order = Order.find(params[:id])
     if @order.update_attributes(order_params)
       @order.calculate_amount
-      redirect_to admin_order_path(@order), notice: 'Updated Successfully.'
+      redirect_to admin_order_path(@order), notice: '訂單已更新成功'
     else
       render :edit
     end
   end
+
+  def destroy
+    @order = Order.find(params[:id])
+    @order.destroy
+    redirect_to admin_order_path(@order), notice: '訂單已刪除成功'
+  end
+
+
 
   private
 

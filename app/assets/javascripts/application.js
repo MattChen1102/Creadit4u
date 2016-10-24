@@ -13,6 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
 //= require bootstrap-sprockets
+//= require circle-progress
 //= require nested_form_fields
+//= require owl.carousel.min
+//= require jquery.magnific-popup.min
+//= require main
+//= require_tree .
+
+

@@ -7,7 +7,7 @@ class OrdersController < ApplicationController
   end
 
   def new
-    @order = current_user.orders.new(email: current_user.email)
+    @order = current_user.orders.new(name: current_user.first_name , mobile: current_user.phone_number ,email: current_user.email)
   end
 
   def create

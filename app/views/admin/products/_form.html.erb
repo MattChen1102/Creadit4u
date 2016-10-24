@@ -14,21 +14,16 @@
   <div class="form-group">
     <%= f.input :content , label: '產品說明'%>
   </div>
-  <% end %>
 
-  <%= form_for([:admin, @product]) do |f| %>
   <div class="form-group">
-    <%= f.label :category_id %>
     <%= f.collection_select :category_id, Category.all, :id, :name %>
   </div>
 
   <div class="form-group">
-    <%= f.label :active %>
+    <%= f.input :active %>
     <%= f.check_box :active %>
  </div>
-  <% end %>
 
-  <%= simple_form_for([:admin, @product]) do |f| %>
   <div class="form-actions">
     <%= f.button :submit ,class: 'btn btn-primary' %>
   </div>

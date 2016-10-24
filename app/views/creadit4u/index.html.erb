@@ -1,78 +1,308 @@
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <%= image_tag 'travel.png'%>
-      <div class="carousel-caption">
-		    <h3>Let's Teavel</h3>
-		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet perferendis reprehenderit, et cum deserunt facilis, dolorem consectetur quidem rem beatae saepe quisquam aliquid optio recusandae rerum porro ducimus commodi! Odit.</p>
-		  </div>
-    </div>
-    <div class="item">
-		  <%= image_tag 'shopping.jpg'%>
-		  <div class="carousel-caption">
-		    <h3>Let's Shopping</h3>
-		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet perferendis reprehenderit, et cum deserunt facilis, dolorem consectetur quidem rem beatae saepe quisquam aliquid optio recusandae rerum porro ducimus commodi! Odit.</p>
-		  </div>
+<div class="top-slider">
+	<div class="top-slider-item slide-1">
+		<div class="top-slider-caption">
+			<div class="top-slider-title">Creadit4U - Perfect Choice</div>
+			<div class="top-slider-text">
+				代刷幫手幫您尋優惠，找代刷
+			</div>
+			<a href="/" class="btn btn-default">Check It Out</a>
 		</div>
-
-		<div class="item">
-		  <%= image_tag 'food.jpg'%>
-		  <div class="carousel-caption">
-		    <h3>Go Restaurant</h3>
-		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet perferendis reprehenderit, et cum deserunt facilis, dolorem consectetur quidem rem beatae saepe quisquam aliquid optio recusandae rerum porro ducimus commodi! Odit.</p>
-		  </div>
+	</div>
+	<div class="top-slider-item slide-2">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<div class="top-slider-caption">
+						<div class="top-slider-title">Let's Travel</div>
+						<div class="top-slider-text">
+							啟程，到別人的生命裡尋找答案
+						</div>
+						<a href="/" class="btn btn-default">立即行動</a>
+					</div>
+				</div>
+			</div>
 		</div>
-
-		<div class="item">
-		  <%= image_tag 'coffee.jpg'%>
-		  <div class="carousel-caption">
-		    <h3>Leisure time</h3>
-		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet perferendis reprehenderit, et cum deserunt facilis, dolorem consectetur quidem rem beatae saepe quisquam aliquid optio recusandae rerum porro ducimus commodi! Odit.</p>
-		  </div>
-		</div>  
-  </div>
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+	</div>
+	<div class="top-slider-item slide-3">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<div class="top-slider-caption">
+						<div class="top-slider-title">食指大動</div>
+						<div class="top-slider-text">
+							享受美食，何須牽掛其他事?						
+						</div>
+						<a href="#" class="btn btn-default">享食優惠</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="features">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4 features-item">
+				<div class="features-icon">
+					<div class="features-icon-overlay"></div>
+					<i class="ion-ionic"></i>
+				</div>
+				<div class="features-title">優惠隨時搜</div>
+				<div class="features-text">
+					掌握各家信用卡優惠，隨時預約信用卡代刷人
+				</div>
+			</div>
+			<div class="col-sm-4 features-item">
+				<div class="features-icon">
+					<div class="features-icon-overlay"></div>
+					<i class="ion-android-contacts"></i>
+				</div>
+				<div class="features-title">你消費，他出卡</div>
+				<div class="features-text">
+					透過第三方現金支付管道，發揮共享經濟精神
+				</div>
+			</div>
+			<div class="col-sm-4 features-item">
+				<div class="features-icon">
+					<div class="features-icon-overlay"></div>
+					<i class="ion-card"></i>
+				</div>
+				<div class="features-title">省去辦卡煩惱</div>
+				<div class="features-text">
+					沒有卡片，照樣享有指定精選優惠
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="portfolio-section">
+	<div class="container">
+		<div class="section-title">Our Services<a href="portfolio-3.html">See All</a></div>
+		<div class="row" id="container">
+			<div class="col-sm-6">
+				<div class="portfolio-item">
+					<a class="popup-link ion-android-expand" href="/" title="Loft Studio"></a>
+					<a href="portfolio-inner.html">
+						<span class="portfolio-item-inner">
+							<%= image_tag('住宿(1408.939).jpg')%>
+							<span class="portfolio-item-overlay">
+								<span class="portfolio-ov-description">
+									<span class="portfolio-ov-title">精選住宿1</span>
+									<span class="portfolio-ov-category">國泰世華 / 最高享受45折優惠</span>
+								</span>
+							</span>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="portfolio-item">
+					<a class="popup-link ion-android-expand" href="http://placehold.it/1408x939" title="Laconic"></a>
+					<a href="portfolio-inner.html">
+						<span class="portfolio-item-inner">
+							<%= image_tag '休閒(1408.939).jpg'%>
+							<span class="portfolio-item-overlay">
+								<span class="portfolio-ov-description">
+									<span class="portfolio-ov-title">精選休閒4</span>
+									<span class="portfolio-ov-category">花旗銀行 / 華納威秀電影票買一送一</span>
+								</span>
+							</span>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="portfolio-item">
+					<a class="popup-link ion-android-expand" href="http://placehold.it/1408x939" title="Loft Studio"></a>
+					<a href="portfolio-inner.html">
+						<span class="portfolio-item-inner">
+							<%= image_tag '購物(1408.939).jpg'%>
+							<span class="portfolio-item-overlay">
+								<span class="portfolio-ov-description">
+									<span class="portfolio-ov-title">購物優惠享更多2</span>
+									<span class="portfolio-ov-category">中國信託 / 指定百貨買3000送300</span>
+								</span>
+							</span>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="portfolio-item">
+					<a class="popup-link ion-android-expand" href="http://placehold.it/1408x939" title="Loft Studio"></a>
+					<a href="portfolio-inner.html">
+						<span class="portfolio-item-inner">
+							<%= image_tag '餐廳(1408.939).jpg'%>
+							<span class="portfolio-item-overlay">
+								<span class="portfolio-ov-description">
+									<span class="portfolio-ov-title">美食饗宴3</span>
+									<span class="portfolio-ov-category">台北富邦 / 豐Food百匯85折</span>
+								</span>
+							</span>
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="centered">
+		<a id="load-btn" class="btn btn-default" onclick="lazyload.load()">Load More</a>
+	</div>
 </div>
 
-<div class='row'>
-  <div class='col-sm-2'>
-    <ul class='nav nav-stacked'>
-      <% @categories.each do |category| %>
-        <li><%= link_to category.name, category_path(category) %></li>
-      <% end %>
-    </ul>
-  </div>
-
-  <!-- <div class='col-sm-10'>
-    <div class="row">
-      <% @products.each do |product| %>
-        <div class='col-sm-3'>
-          <div class='media'>
-            <%= image_tag 'test.jpeg', class: 'pull-left' %>
-            <div class='media-body'>
-              <h2 class='product-name'><%= link_to product.name, category_product_path(product.category, product) %></h2>
-              <div class='product-description'><%= product.description %></div>
-              <div class='product-price'><%= number_to_currency product.price %></div>
-            </div>
-          </div>
-        </div>
-      <% end %>
-    </div> -->
-    <%= paginate @products %>
+<div class="our-clients-section">
+	<div class="container">
+		<div class="section-title">Users that have chosen us<span class="section-subtitle">我們提供</span></div>
+		<div class="clients-carousel">
+			<a href="#"><%= image_tag 'c-1.png'%></a>
+			<a href="#"><%= image_tag 'c-2.png'%></a>
+			<a href="#"><%= image_tag 'c-3.jpeg'%></a>
+			<a href="#"><%= image_tag 'c-4.png'%></a>
+			<a href="#"><%= image_tag 'c-5.png'%></a>
+		</div>
+	</div>
 </div>
+
+<div class="testimonials-section">
+	<div class="container">
+		<div class="section-title-left">Testimonials<span class="section-subtitle">聽聽我們的使用者怎麼說</span></div>
+		<div class="testimonials-carousel">
+		    <div class="testimonials-item">
+		    	<img class="testimonials-img" <%= image_tag 'logo2.png'%>
+		    	<div class="testimonials-description">	
+		    		<div class="testimonials-quote">
+		    			Lorem ipsum dolor sit amet, consectetur adipisicing elit. At eius neque nam unde quis, nesciunt laudantium esse dolorem iusto voluptatibus!
+		    		</div>
+		    		<div class="testimonials-name">Mark Duglas <span class="testimonials-position">工程師</span></div>
+		    	</div>
+		    </div>
+		    <div class="testimonials-item">
+		    	<img class="testimonials-img" <%= image_tag 'logo2.png'%>
+		    	<div class="testimonials-description">
+		    		<div class="testimonials-quote">
+		    			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolores iusto incidunt magnam quam, officia ipsam adipisci recusandae accusamus ipsa!
+		    		</div>
+		    		<div class="testimonials-name">Melissa Jane <span class="testimonials-position">金融業</span></div>
+		    	</div>
+		    </div>
+		    <div class="testimonials-item">
+		    	<img class="testimonials-img" <%= image_tag 'logo2.png'%>
+		    	<div class="testimonials-description">
+		    		<div class="testimonials-quote">
+		    			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem vel molestiae harum numquam dolor, accusantium eius qui. Odio possimus, velit.
+		    		</div>
+		    		<div class="testimonials-name">Philip Jefferson <span class="testimonials-position">高中老師</span></div>
+		    	</div>
+		    </div>
+		    <div class="testimonials-item">
+		    	<img class="testimonials-img" <%= image_tag 'logo2.png'%>
+		    	<div class="testimonials-description">
+		    		<div class="testimonials-quote">
+		    			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium veritatis expedita eius, iusto consequuntur facilis sunt quasi laudantium eos facere.
+		    		</div>
+		    		<div class="testimonials-name">Jennifer Parker <span class="testimonials-position">業務員</span></div>
+		    	</div>
+		    </div>
+		</div>
+	</div>
+</div>
+<div class="about-blog-wrap">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="about-section">
+					<div class="section-title-left">About Us<a href="about-us.html">Learn More</a></div>
+					<div class="about-text">
+						Creadit4U是一間年輕正發薪芽的團隊，成立於2016年夏天的台北。我們熱愛且相信自己所做的工作，堅信想要幫助大家共享信用卡優惠，也期望能將這樣的熱情分享給我們的身邊的每一個人。...
+					</div>
+					<div class="progress-wrap">
+						<div class="progress-item">
+							<div class="progress-circle" id="circle1">
+								<div class="circle-value"></div>
+							</div>
+							<div class="circle-title">效率</div>
+						</div>
+						<div class="progress-item">
+							<div class="progress-circle" id="circle2">
+								<div class="circle-value"></div>
+							</div>
+							<div class="circle-title">成交率</div>
+						</div>
+						<div class="progress-item">
+							<div class="progress-circle" id="circle3">
+								<div class="circle-value"></div>
+							</div>
+							<div class="circle-title">開發度</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<a href="index.html">
+					<img class="footer-logo" src="images/logo-gray.png" alt="">
+				</a>
+				<ul class="footer-contacts">
+					<li><i class="ion-android-pin"></i>Adress: 142 Central, San Francisco</li>
+					<li><i class="ion-android-phone-portrait"></i> Phone: (02) 2541-9799</li>
+					<li><i class="ion-android-mail"></i>E-mail: Creadit4u@gmail.com</li>
+					<li><i class="ion-android-time"></i>Open: from 8 am to 6 pm</li>
+				</ul>
+				<ul class="footer-social">
+					<li><a href="#"><i class="ion-social-vimeo"></i></a></li>
+					<li><a href="#"><i class="ion-social-instagram"></i></a></li>
+					<li><a href="#"><i class="ion-social-github"></i></a></li>
+					<li><a href="#"><i class="ion-social-facebook"></i></a></li>
+					<li><a href="#"><i class="ion-social-twitter"></i></a></li>
+					<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+				</ul>
+			</div>
+			<div class="col-sm-4">
+				<div class="footer-title">Recent Facebook News</div>
+				<ul class="footer-twitter">
+					<li class="footer-tweet ion-social-facebook">
+						<a href="#">@Creadit4U</a>
+							2016年百貨週年慶開跑啦！精選信用卡優惠年度採買
+						<a href="#" class="tweet-link">https://www.facebook.com/Credit4UPro/?ref=ts&fref=ts</a>
+						<div class="tweet-time">3 days ago</div>
+					</li>
+					<li class="footer-tweet ion-social-facebook">
+						<a href="#">@Creadit4U</a>
+							為您找尋信用卡最佳幫手，代刷優惠免辦卡立即享
+						<a href="#" class="tweet-link">https://www.facebook.com/Credit4UPro/?ref=ts&fref=ts</a>
+						<div class="tweet-time">7 days ago</div>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-4">
+				<div class="footer-flickr">
+					<div class="footer-title">Ours Halloween Photos</div>
+					<div id="flickr_badge_wrapper"><script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=8&display=latest&size=s&layout=x&source=user&user=52617155@N08"></script></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<div>
+						Copyright © 2016 <a href="#">Creadit4U</a>. Created by <a href="http://themeforest.net/user/gryndii">Website Development</a>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<ul class="footer-menu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about-us.html">About Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
