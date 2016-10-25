@@ -10,7 +10,8 @@
       <th>電話</th>
       <th>金額</th>
       <th>付款狀態</th>
-      <th>訂單狀態</th>
+      <th>代刷狀態</th>
+      <th>訂單詳情</th>
     </tr>
   </thead>
   <tbody>
@@ -22,8 +23,8 @@
         <td><%= order.mobile %></td>
         <td><%= number_to_currency order.amount %></td>
         <td><%= order.paid? %></td>
+        <td>已有代刷人接單，處理中</td>
         <td><%= link_to '檢視', order_path(order) %></td>
-        <td>代刷人已接單處理中</td>
       </tr>
     <% end %>
   </tbody>
