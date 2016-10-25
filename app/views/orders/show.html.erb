@@ -1,11 +1,11 @@
 <br>
-<% if @order.paid? %>
+  <% if @order.paid? %>
 <br>
-  <p align="center">已付款完成</p>
+<hr>
 <br>
-  <textarea>
-    <%= @order.payments.last.params %>
-  </textarea>
+  <p align="center">恭喜你，付款已完成！</p>
+<br>
+<hr>
 <br>
 <% else %>
   <h3 align="center">選擇結帳方式</h3>
