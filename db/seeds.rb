@@ -27,25 +27,25 @@ User.create!(
 Category.create!(
 	name:"Travel",
 	description:"XXX",
-	enabled: true,
+	enabled: true
 	)
 
 Category.create!(
 	name:"Gifts",
 	description:"XXX",
-	enabled: true,
+	enabled: true
 	)
 
 Category.create!(
 	name:"Restaurant",
 	description:"XXX",
-	enabled: true,
+	enabled: true
 	)
 
 Category.create!(
 	name:"Leisure",
 	description:"XXX",
-	enabled: true,
+	enabled: true
 	)
 
 Product.create!(
@@ -107,7 +107,7 @@ Product.create!(
 		台糖長榮酒店（台南）- 台南市中華東路三段336巷1號 - 電話：(06) 289-9988
 		",
   price:6435,
-  active:true,
+  active:true
 	)
 
 Product.create!(
@@ -116,7 +116,7 @@ Product.create!(
 	category_id: 1 ,
   content:"墾丁假期渡假飯店",
   price:6435,
-  active:true,
+  active:true
 	)
 
 Product.create!(
@@ -125,7 +125,7 @@ Product.create!(
 	category_id: 1 ,
   content:"寒軒國際大飯店",
   price:6435,
-  active:true,
+  active:true
 	)
 
 Product.create!(
@@ -134,7 +134,7 @@ Product.create!(
 	category_id: 1 ,
   content:"北投春天酒店",
   price:6435,
-  active:true,
+  active:true
 	)
 
 Product.create!(
@@ -143,7 +143,7 @@ Product.create!(
 	category_id: 1 ,
   content:"福容大飯店",
   price:6435,
-  active:true,
+  active:true
 	)
 
 Product.create!(
@@ -152,7 +152,7 @@ Product.create!(
 	category_id: 1 ,
   content:"艾美寒舍",
   price:1680,
-  active:true,
+  active:true
 	)
 
 
