@@ -25,7 +25,7 @@ class Payment < ApplicationRecord
   end
 
   def name
-    "BetaCamp Order:#{self.id}"
+    "Credit4U Order:#{self.id}"
   end
 
   def email
