@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-User.create(
+User.create!(
   email: 'matt_is_admin@gmail.com',
   password: '88888888',
   password_confirmation: '88888888',
@@ -14,7 +14,7 @@ User.create(
   phone_number: "0905027528",
   admin: true
   )
-User.create(
+User.create!(
   email: 'zzz33221@yahoo.com.tw',
   password: '666666',
   password_confirmation: '666666',
@@ -24,31 +24,31 @@ User.create(
   admin: false
   )
 
-Category.create(
+Category.create!(
 	name:"Travel",
 	description:"XXX",
 	enabled: true,
 	)
 
-Category.create(
+Category.create!(
 	name:"Gifts",
 	description:"XXX",
 	enabled: true,
 	)
 
-Category.create(
+Category.create!(
 	name:"Restaurant",
 	description:"XXX",
 	enabled: true,
 	)
 
-Category.create(
+Category.create!(
 	name:"Leisure",
 	description:"XXX",
 	enabled: true,
 	)
 
-Product.create(
+Product.create!(
 	name:"長榮桂冠酒店",
 	description:"Creadit4u精選國泰世華信用卡優惠飯店，最高享65折優惠",
 	category_id: 1 ,
@@ -110,7 +110,7 @@ Product.create(
   active:true,
 	)
 
-Product.create(
+Product.create!(
 	name:"墾丁假期渡假飯店",
 	description:"Creadit4u精選玉山銀行信用卡優惠飯店，最高享5折優惠",
 	category_id: 1 ,
@@ -119,7 +119,7 @@ Product.create(
   active:true,
 	)
 
-Product.create(
+Product.create!(
 	name:"寒軒國際大飯店",
 	description:"Creadit4u精選兆豐銀行信用卡優惠飯店，最高享7折優惠",
 	category_id: 1 ,
@@ -128,7 +128,7 @@ Product.create(
   active:true,
 	)
 
-Product.create(
+Product.create!(
 	name:"北投春天酒店",
 	description:"Creadit4u精選玉山銀行信用卡優惠飯店，最高享6折優惠",
 	category_id: 1 ,
@@ -137,7 +137,7 @@ Product.create(
   active:true,
 	)
 
-Product.create(
+Product.create!(
 	name:"福容大飯店",
 	description:"Creadit4u精選澳盛銀行信用卡優惠飯店，最高享7折優惠",
 	category_id: 1 ,
@@ -146,7 +146,7 @@ Product.create(
   active:true,
 	)
 
-Product.create(
+Product.create!(
 	name:"艾美寒舍",
 	description:"Creadit4u精選中國信託信用卡優惠探索廚房下午茶，最高享85折優惠",
 	category_id: 1 ,
