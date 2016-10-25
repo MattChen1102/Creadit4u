@@ -14,6 +14,7 @@ User.create!(
   phone_number: "0905027528",
   admin: true
   )
+puts 'create1'
 User.create!(
   email: 'zzz33221@yahoo.com.tw',
   password: '666666',
@@ -23,31 +24,31 @@ User.create!(
   phone_number: "0928112233",
   admin: false
   )
-
+puts 'create2'
 Category.create!(
 	name:"Travel",
 	description:"XXX",
 	enabled: true
 	)
-
+puts 'create3'
 Category.create!(
 	name:"Gifts",
 	description:"XXX",
 	enabled: true
 	)
-
+puts 'create4'
 Category.create!(
 	name:"Restaurant",
 	description:"XXX",
 	enabled: true
 	)
-
+puts 'create5'
 Category.create!(
 	name:"Leisure",
 	description:"XXX",
 	enabled: true
 	)
-
+puts 'create6'
 Product.create!(
 	name:"長榮桂冠酒店",
 	description:"Creadit4u精選國泰世華信用卡優惠飯店，最高享65折優惠",
@@ -109,7 +110,7 @@ Product.create!(
   price:6435,
   active:true
 	)
-
+puts 'create7'
 Product.create!(
 	name:"墾丁假期渡假飯店",
 	description:"Creadit4u精選玉山銀行信用卡優惠飯店，最高享5折優惠",
@@ -118,7 +119,7 @@ Product.create!(
   price:6435,
   active:true
 	)
-
+puts 'create8'
 Product.create!(
 	name:"寒軒國際大飯店",
 	description:"Creadit4u精選兆豐銀行信用卡優惠飯店，最高享7折優惠",
@@ -127,7 +128,7 @@ Product.create!(
   price:6435,
   active:true
 	)
-
+puts 'create9'
 Product.create!(
 	name:"北投春天酒店",
 	description:"Creadit4u精選玉山銀行信用卡優惠飯店，最高享6折優惠",
@@ -136,7 +137,7 @@ Product.create!(
   price:6435,
   active:true
 	)
-
+puts 'create10'
 Product.create!(
 	name:"福容大飯店",
 	description:"Creadit4u精選澳盛銀行信用卡優惠飯店，最高享7折優惠",
@@ -145,7 +146,7 @@ Product.create!(
   price:6435,
   active:true
 	)
-
+puts 'create11'
 Product.create!(
 	name:"艾美寒舍",
 	description:"Creadit4u精選中國信託信用卡優惠探索廚房下午茶，最高享85折優惠",
@@ -154,6 +155,7 @@ Product.create!(
   price:1680,
   active:true
 	)
+puts 'create12'
 
 
 
