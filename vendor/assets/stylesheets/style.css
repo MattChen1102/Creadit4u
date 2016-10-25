@@ -2682,6 +2682,21 @@ footer a {
 
 
 /*----blog inner page----*/
+
+.Original-price{
+	color:blue;
+	text-decoration:line-through;
+}
+
+.Specifies-the-card{
+	text-decoration:underline;
+	size:20px;
+}
+
+.product-price{
+	color:red;
+}
+
 .blog-cover {
 	position: relative;
 	margin-top: 30px;

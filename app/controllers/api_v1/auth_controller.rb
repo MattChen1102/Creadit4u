@@ -16,7 +16,7 @@ class ApiV1::AuthController < ApiController
                         :first_name => user.first_name,
                         :last_name => user.last_name,
                         :phone_number => user.phone_number,
-                        :photo => "https://firebasestorage.googleapis.com/v0/b/ios1-ec05d.appspot.com/o/%E6%98%93%E4%BA%9E%E5%A9%B7.png?alt=media&token=8e7b6244-45e1-41d2-ba15-7b9232f5c2a6"
+                        :photo => "https://firebasestorage.googleapis.com/v0/b/credit4u-e6cb7.appspot.com/o/%E5%BC%B5%E7%A5%90%E9%8A%98.jpeg?alt=media&token=9123bf21-077e-4e9b-a05a-1311744eec8c"
                       }
      else
        render :json => { :message => "Email or Password is wrong" }, :status => 401

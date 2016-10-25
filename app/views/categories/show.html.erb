@@ -8,7 +8,7 @@
 				</div>
 				<div class="col-sm-6">
 					<div class="breadcrumbs-sec-crumbs">
-						<a href="#">Home</a>
+						<a href=<%= "#{root_path}"%>>Home</a>
 						<span><%= @category.name %></span>
 					</div>
 				</div>
@@ -20,7 +20,7 @@
 		<ul class="portfolio-filter">
 			<li data-filter="all">All</li>
 			<li data-filter="web design">Travel</li>
-			<li data-filter="branding">Shopping</li>
+			<li data-filter="branding">Gifts</li>
 			<li data-filter="interior">Restaurant</li>
 			<li data-filter="app development">Leisure</li>
 		</ul>
@@ -29,13 +29,13 @@
 				<div class="col-sm-6 col-md-4 portfolio-item-wrap" data-filter="web design">
 					<div class="portfolio-item">
 						<a class="popup-link ion-android-expand" href="#" title="Check It"></a>
-						<a href=<%= "#{category_product_path(Category.find(1),Product.find(2))}"%> >
+						<a href=<%= "#{category_product_path(Category.find(1),Product.find(1))}"%> >
 							<span class="portfolio-item-inner">
 								<%= image_tag ('長榮桂冠.png')%>
 								<span class="portfolio-item-overlay">
 									<span class="portfolio-ov-description">
 										<span class="portfolio-ov-title">長榮桂冠酒店</span>
-										<span class="portfolio-ov-category">國泰世華 / 最高享45% off</span>
+										<span class="portfolio-ov-category">國泰世華 / 最高享65折</span>
 									</span>
 								</span>
 							</span>
@@ -45,13 +45,13 @@
 				<div class="col-sm-6 col-md-4 portfolio-item-wrap" data-filter="branding">
 					<div class="portfolio-item">
 						<a class="popup-link ion-android-expand" href="http://placehold.it/1408x939" title="Laconic"></a>
-						<a href=<%= "#{category_product_path(Category.find(1),Product.find(6))}"%> >
+						<a href=<%= "#{category_product_path(Category.find(1),Product.find(2))}"%> >
 							<span class="portfolio-item-inner">
 								<%= image_tag ('墾丁假期大飯店.png')%>
 								<span class="portfolio-item-overlay">
 									<span class="portfolio-ov-description">
 										<span class="portfolio-ov-title">墾丁假期渡假飯店</span>
-										<span class="portfolio-ov-category">玉山銀行 / 最高享50％ off </span>
+										<span class="portfolio-ov-category">玉山銀行 / 最高享5折 </span>
 									</span>
 								</span>
 							</span>
@@ -61,13 +61,13 @@
 				<div class="col-sm-6 col-md-4 portfolio-item-wrap" data-filter="interior">
 					<div class="portfolio-item">
 						<a class="popup-link ion-android-expand" href="http://placehold.it/1408x939" title="Loft Studio"></a>
-						<a href=<%= "#{category_product_path(Category.find(1),Product.find(7))}"%> >
+						<a href=<%= "#{category_product_path(Category.find(1),Product.find(3))}"%> >
 							<span class="portfolio-item-inner">
 								<%= image_tag ('寒軒.png')%>
 								<span class="portfolio-item-overlay">
 									<span class="portfolio-ov-description">
 										<span class="portfolio-ov-title">寒軒國際大飯店</span>
-										<span class="portfolio-ov-category">兆豐銀行 / 最高享30％ off</span>
+										<span class="portfolio-ov-category">兆豐銀行 / 最高享7折</span>
 									</span>
 								</span>
 							</span>
@@ -77,13 +77,13 @@
 				<div class="col-sm-6 col-md-4 portfolio-item-wrap" data-filter="app development">
 					<div class="portfolio-item">
 						<a class="popup-link ion-android-expand" href="http://placehold.it/1408x939" title="Loft Studio"></a>
-						<a href=<%= "#{category_product_path(Category.find(1),Product.find(8))}"%> >
+						<a href=<%= "#{category_product_path(Category.find(1),Product.find(4))}"%> >
 							<span class="portfolio-item-inner">
 								<%= image_tag ('北投春天.png')%>
 								<span class="portfolio-item-overlay">
 									<span class="portfolio-ov-description">
 										<span class="portfolio-ov-title">北投春天酒店</span>
-										<span class="portfolio-ov-category">玉山銀行 / 最高享60％ off </span>
+										<span class="portfolio-ov-category">玉山銀行 / 最高享6折</span>
 									</span>
 								</span>
 							</span>
@@ -93,13 +93,13 @@
 				<div class="col-sm-6 col-md-4 portfolio-item-wrap" data-filter="branding">
 					<div class="portfolio-item">
 						<a class="popup-link ion-android-expand" href="http://placehold.it/1408x939" title="Loft Studio"></a>
-						<a href=<%= "#{category_product_path(Category.find(1),Product.find(9))}"%> >
+						<a href=<%= "#{category_product_path(Category.find(1),Product.find(5))}"%> >
 							<span class="portfolio-item-inner">
 								<%= image_tag ('福容.png')%>
 								<span class="portfolio-item-overlay">
 									<span class="portfolio-ov-description">
 										<span class="portfolio-ov-title">福容大飯店</span>
-										<span class="portfolio-ov-category">澳盛銀行 / 最高享30％ off </span>
+										<span class="portfolio-ov-category">澳盛銀行 / 最高享7折 </span>
 									</span>
 								</span>
 							</span>
@@ -109,13 +109,13 @@
 				<div class="col-sm-6 col-md-4 portfolio-item-wrap" data-filter="interior">
 					<div class="portfolio-item">
 						<a class="popup-link ion-android-expand" href="http://placehold.it/1408x939" title="Loft Studio"></a>
-						<a href=<%= "#{category_product_path(Category.find(1),Product.find(10))}"%> >
+						<a href=<%= "#{category_product_path(Category.find(1),Product.find(6))}"%> >
 							<span class="portfolio-item-inner">
 								<%= image_tag ('艾美寒舍.png')%>
 								<span class="portfolio-item-overlay">
 									<span class="portfolio-ov-description">
 										<span class="portfolio-ov-title">艾美寒舍</span>
-										<span class="portfolio-ov-category">design / interior</span>
+										<span class="portfolio-ov-category">中國信託 / 探索廚房</span>
 									</span>
 								</span>
 							</span>
